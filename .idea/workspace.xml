@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="tomcat4:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="88eeea53-4918-40ec-a980-9cbd6bb8d58c" name="Changes" comment="Update README.md" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="XML file.xml" />
+        <option value="package-info" />
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ZzPoKi0_0 &lt;92191993+zzpoki@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.8.6" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.8.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Gw8K8eRA5lvYnjzYobpkxL1pIx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "SELECTIVE",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/Git-2.38.1-64/ProductManageSystem",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javaweb project\Java_web_project_1\tomcat4\src\main\webapp" />
+      <recent name="D:\javaweb project\Java_web_project_1\tomcat4\src\main\resources\mapper" />
+      <recent name="D:\javaweb project\Java_web_project_1\tomcat4\src\main\resources" />
+      <recent name="D:\javaweb project\Java_web_project_1\tomcat2\src\main\webapp" />
+      <recent name="D:\javaweb project\Java_web_project_1\tomcat3\src\main\webapp\js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="web" />
+      <recent name="utils" />
+      <recent name="web.ajax" />
+      <recent name="sessionDemo" />
+      <recent name="cookieDemo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.2">
+    <configuration name="crud.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Java_web_project_1/tomcat2/src/main/webapp/crud.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="selectAll.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/tomcat4_war/selectAll.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="select.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Java_web_project_1/tomcat2/src/main/webapp/select.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="select.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/tomcat2_war/select.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/tomcat4_war/test.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 10.1.2" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.2" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/tomcat4_war/selectall" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="tomcat4:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/tomcat4_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="e7e1b4d6-e9ac-46a1-a9cb-a1e32ae4a222" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56275" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="tomcat4:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.selectAll.html" />
+      <item itemvalue="JavaScript Debug.test.html" />
+      <item itemvalue="JavaScript Debug.select.html (1)" />
+      <item itemvalue="JavaScript Debug.crud.html" />
+      <item itemvalue="JavaScript Debug.select.html" />
+      <item itemvalue="Tomcat Server.Tomcat 10.1.2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.selectAll.html" />
+        <item itemvalue="JavaScript Debug.select.html (1)" />
+        <item itemvalue="JavaScript Debug.test.html" />
+        <item itemvalue="JavaScript Debug.select.html" />
+        <item itemvalue="JavaScript Debug.crud.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88eeea53-4918-40ec-a980-9cbd6bb8d58c" name="Changes" comment="" />
+      <created>1667288221105</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667288221105</updated>
+      <workItem from="1667288222393" duration="9935000" />
+      <workItem from="1667314534083" duration="4650000" />
+      <workItem from="1667397388842" duration="10866000" />
+      <workItem from="1667480611224" duration="5479000" />
+      <workItem from="1667489475925" duration="1045000" />
+      <workItem from="1667490635724" duration="3947000" />
+      <workItem from="1667554355490" duration="293000" />
+      <workItem from="1667554684501" duration="123000" />
+      <workItem from="1667554813950" duration="99000" />
+      <workItem from="1667554920605" duration="3196000" />
+      <workItem from="1667576104699" duration="509000" />
+      <workItem from="1667576621003" duration="522000" />
+      <workItem from="1667577151173" duration="4144000" />
+      <workItem from="1667581314020" duration="1619000" />
+      <workItem from="1667619363092" duration="7404000" />
+      <workItem from="1667727997804" duration="10003000" />
+      <workItem from="1667742108143" duration="7618000" />
+      <workItem from="1667808531304" duration="5503000" />
+      <workItem from="1667896974598" duration="2000" />
+      <workItem from="1668006872990" duration="1000" />
+      <workItem from="1668007831751" duration="2000" />
+      <workItem from="1668177720778" duration="5000" />
+      <workItem from="1668513892554" duration="698000" />
+      <workItem from="1668514597549" duration="2120000" />
+      <workItem from="1668516726081" duration="252000" />
+      <workItem from="1668517025316" duration="2961000" />
+      <workItem from="1668525739379" duration="108000" />
+      <workItem from="1668525857167" duration="1486000" />
+      <workItem from="1668605916741" duration="4366000" />
+      <workItem from="1668610293695" duration="1324000" />
+      <workItem from="1668611625741" duration="58000" />
+      <workItem from="1668611690664" duration="3948000" />
+      <workItem from="1668672461791" duration="10086000" />
+      <workItem from="1668764280402" duration="22395000" />
+      <workItem from="1668846178304" duration="17446000" />
+      <workItem from="1668934802340" duration="13883000" />
+      <workItem from="1669021666229" duration="13982000" />
+      <workItem from="1669092335424" duration="3607000" />
+      <workItem from="1669116964010" duration="4217000" />
+      <workItem from="1669132039754" duration="5055000" />
+      <workItem from="1669195272247" duration="19368000" />
+      <workItem from="1669216614587" duration="4335000" />
+      <workItem from="1669279824585" duration="8836000" />
+      <workItem from="1669367288998" duration="3035000" />
+      <workItem from="1669385128482" duration="3075000" />
+      <workItem from="1669388213657" duration="1459000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update README.md">
+      <created>1669385796688</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669385796688</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update README.md">
+      <created>1669389036165</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669389036165</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../Git-2.38.1-64" />
+      <path value="$PROJECT_DIR$/../../Git-2.38.1-64/ProductManageSystem" />
+    </ignored-roots>
+    <MESSAGE value="Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/tomcat4/src/main/java/service/ProductService.java</url>
+          <line>7</line>
+          <properties class="service.ProductService" method="selectAll">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
