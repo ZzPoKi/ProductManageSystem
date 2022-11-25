@@ -76,6 +76,10 @@
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module",
+      "directory"
+    ],
     "DatabaseDriversLRU": [
       "mysql"
     ]
@@ -273,7 +277,7 @@
       <workItem from="1669279824585" duration="8836000" />
       <workItem from="1669367288998" duration="3035000" />
       <workItem from="1669385128482" duration="3075000" />
-      <workItem from="1669388213657" duration="1459000" />
+      <workItem from="1669388213657" duration="2145000" />
     </task>
     <task id="LOCAL-00001" summary="Update README.md">
       <created>1669385796688</created>
@@ -289,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669389036165</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update README.md">
+      <created>1669389750731</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669389750731</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
