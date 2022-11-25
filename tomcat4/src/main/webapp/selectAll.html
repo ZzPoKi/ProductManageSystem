@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .el-table .warning-row {
+            background: oldlace;
+        }
+
+        .el-table .success-row {
+            background: #f0f9eb;
+        }
+    </style>
+</head>
+<body>
+<!--<style>-->
+<!--    el-switch {-->
+<!--       position: absolute;-->
+<!--        left: 1000px;-->
+<!--    }-->
+<!--</style>-->
+<div id="app">
+    <el-switch
+            @change="changeBgColor"
+            v-model="value"
+            active-text="Dark"
+            inactive-text="Light"
+            active-color="#409eff"
+            inactive-color="#c0ccda">
+    </el-switch>
+    <br>
+    <br>
+    <el-row>
+        <el-button type="primary" @click="dialogFormAddVisible = true">添加商品</el-button>
+        <el-button type="primary" @click="open1(); selectAll()">刷新</el-button>
+    </el-row>
+    <br>
+    <el-input v-model="input" placeholder="请输入内容" clearable style="width: 300px"></el-input>
+    <el-button type="primary" icon="el-icon-search" style="left: 320px">搜索</el-button>
+    <br>
+    <br>
+    <el-table
+            id="table"
+            :data="tableData"
+            style="width: 100%"
+            :row-class-name="tableRowClassName"
+            align="center">
+        <el-table-column
+                prop="id"
+                label="id"
+                width="280">
+        </el-table-column>
+        <el-table-column
+                prop="name"
+                label="商品名"
+                width="280">
+        </el-table-column>
+        <el-table-column
+                prop="price"
+                label="价格"
+                width="280">
+        </el-table-column>
+        <el-table-column
+                prop="sales"
+                label="销量"
+                width="280">
+        </el-table-column>
+        <el-table-column label="操作" align="center" width="200px">
+            <el-row slot-scope="scope" class="active">
+                <el-button @click="dialogFormUpdateVisible = true" type="primary" icon="el-icon-edit" circle="true"></el-button>
+                <el-button @click="open" type="danger" icon="el-icon-delete" circle="true"></el-button>
+            </el-row>
+        </el-table-column>
+    </el-table>
+    <br>
+    <br>
+    <el-pagination
+            background
+            layout="prev, pager, next"
+            align="center"
+            :total="1000">
+    </el-pagination>
+    <!-- FormAdd -->
+
+    <el-dialog title="新增商品" :visible.sync="dialogFormAddVisible">
+        <el-form :model="product">
+            <el-form-item label="商品id" :label-width="formAddLabelWidth">
+                <el-input v-model="product.id" autocomplete="off" clearable="true"></el-input>
+            </el-form-item>
+            <el-form-item label="商品名" :label-width="formAddLabelWidth">
+                <el-input v-model="product.name" autocomplete="off" clearable="true"></el-input>
+            </el-form-item>
+            <el-form-item label="商品价格" :label-width="formAddLabelWidth">
+                <el-input v-model="product.price" autocomplete="off" clearable="true"></el-input>
+            </el-form-item>
+            <el-form-item label="商品销量" :label-width="formAddLabelWidth">
+                <el-input v-model="product.sales" autocomplete="off" clearable="true"></el-input>
+            </el-form-item>
+        </el-form>
+        <div slot="footer" class="dialog-footer">
+            <el-button @click="dialogFormAddVisible = false">取消</el-button>
+            <el-button type="primary" @click="addProduct">提交</el-button>
+        </div>
+    </el-dialog>
+    <!--    FormUpdate-->
+    <el-dialog title="更新商品" :visible.sync="dialogFormUpdateVisible">
+        <el-form :model="product">
+            <el-form-item label="商品id" :label-width="formUpdateLabelWidth">
+                <el-input v-model="product.id" autocomplete="off" clearable="true"></el-input>
+            </el-form-item>
+            <el-form-item label="商品名" :label-width="formUpdateLabelWidth">
+                <el-input v-model="product.name" autocomplete="off" clearable="true"></el-input>
+            </el-form-item>
+            <el-form-item label="商品价格" :label-width="formUpdateLabelWidth">
+                <el-input v-model="product.price" autocomplete="off" clearable="true"></el-input>
+            </el-form-item>
+            <el-form-item label="商品销量" :label-width="formUpdateLabelWidth">
+                <el-input v-model="product.sales" autocomplete="off" clearable="true"></el-input>
+            </el-form-item>
+        </el-form>
+        <div slot="footer" class="dialog-footer">
+            <el-button @click="dialogFormUpdateVisible = false">取消</el-button>
+            <el-button type="primary" @click="updateProduct">提交</el-button>
+        </div>
+    </el-dialog>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="vue.js"></script>
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: "#app",
+        data() {
+            return {
+                tableData: [],//将数组返回到el-table表格中
+                input: "",
+                value: false,
+                dialogFormAddVisible: false,
+                dialogFormUpdateVisible: false,
+                //product模型数据
+                product: {
+                    id: "",
+                    name: "",
+                    price: "",
+                    sales: ""
+                },
+                formAddLabelWidth: '100px',
+                formUpdateLabelWidth: '100px'
+            };
+        },
+        mounted() {
+            var _this = this;
+            _this.selectAll();
+        },
+        methods: {
+            deleteById() {
+                var _this = this;
+                axios({
+                    method: "post",
+                    url: "http://localhost:8080/tomcat4_war/delete",
+                    data: _this.product.name
+                }).then(function (resp) {
+                    console.log(resp.data)
+                })
+            },
+            open2() {
+                this.$message({
+                    message: '添加成功',
+                    type: 'success'
+                });
+            },
+            open() {
+                this.$confirm('确定删除该商品？', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(() => {
+                    this.delete();
+                    this.$message({
+                        type: 'success',
+                        message: '删除成功!'
+                    });
+                }).catch(() => {
+                    this.$message({
+                        type: 'info',
+                        message: '已取消删除'
+                    });
+                });
+            },
+            open1() {
+                this.$message({
+                    message: '刷新成功',
+                    type: 'success'
+                });
+            },
+            open4() {
+                this.$message.error('添加失败');
+            },
+            updateSuccess(){
+                this.$message({
+                    message: '更新成功',
+                    type: 'success'
+                });
+            },
+            updateFalse(){
+                this.$message.error('更新失败');
+            },
+            selectAll() {
+                var _this = this;
+                //当页面加载完成，发送异步请求获取数据
+                axios({
+                    method: "get",
+                    url: "http://localhost:8080/tomcat4_war/selectall"
+                }).then(function (resp) {
+                    _this.tableData = resp.data;
+                })
+            },
+            tableRowClassName({row, rowIndex}) {
+                if (rowIndex === 1) {
+                    return 'warning-row';
+                } else if (rowIndex === 3) {
+                    return 'success-row';
+                }
+                return '';
+            },
+            changeBgColor: function (change) {
+                if (this.value == true) {
+                    document.body.style.backgroundColor = "burlywood";
+                } else {
+                    document.body.style.backgroundColor = "white";
+                }
+            },
+            onSubmit() {
+                console.log('submit!');
+            },
+            //添加品牌
+            addProduct() {
+                var _this = this;
+                axios({
+                    method: "post",
+                    url: "http://localhost:8080/tomcat4_war/add",
+                    data: _this.product
+                }).then(function (resp) {
+                    if (resp.data == "success") {
+                        _this.dialogFormAddVisible = false;
+                        _this.updateSuccess();
+                        _this.selectAll();
+                    } else {
+                        _this.updateFalse();
+                    }
+                })
+                // console.log(this.product)
+            },
+            //更新商品
+            updateProduct(){
+                var _this = this;
+                axios({
+                    method: "post",
+                    url: "http://localhost:8080/tomcat4_war/update",
+                    data: _this.product
+                }).then(function (resp){
+                    if (resp.data == "success") {
+                        _this.dialogFormUpdateVisible = false;
+                        _this.updateSuccess();
+                        _this.selectAll();
+                    } else {
+                        _this.updateFalse();
+                    }
+                })
+            }
+        }
+    })
+</script>
+</body>
+</html>

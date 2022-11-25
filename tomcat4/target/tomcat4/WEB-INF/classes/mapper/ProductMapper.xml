@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace为名称空间-->
+<mapper namespace="mapper.ProductMapper">
+    <insert id="addProduct">
+        insert into product (id, name, price, sales)
+        values (#{id}, #{name}, #{price}, #{sales});
+    </insert>
+    <update id="updateProduct">
+        update product
+        set name = #{name},
+            price    = #{price},
+            sales    = #{sales}
+        where id = #{id};
+    </update>
+    <delete id="deleteProduct">
+        delete
+        from product
+        where id = #{id};
+    </delete>
+    <!-- 查询所有-->
+    <select id="selectAll" resultType="pojo.Product">
+        select *
+        from product;
+    </select>
+</mapper>
